@@ -1,0 +1,220 @@
+
+@font-face{
+  font-family: Poppins;
+  src: url(https://fonts.google.com/specimen/Poppins);
+}
+@font-face{
+  font-family: Open-Sans;
+  src: url(https://fonts.google.com/specimen/Open+Sans);
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+p{
+  font-family: 'Open-Sans', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+
+}
+button:hover{
+  font-weight: 700;
+  background-color: hsl(322, 80%, 81%);
+}
+li a:hover{
+  font-weight: 700;
+}
+li a{
+  font-weight: 400;
+}
+header{
+  background:hsl(193, 100%, 96%) url(./resources/bg-hero-desktop.svg);
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: hsl(208, 11%, 55%);
+}
+.space-around{
+  padding: 50px;
+}
+.flex-display{
+  display: flex;
+  align-items: center;
+}
+.flex-row{
+  flex-direction: column;
+}
+.js-center{
+  justify-content: space-between; 
+}
+.js-around{
+  justify-content: space-evenly;
+}
+.column{
+  padding: 50px 0px;
+  width: 600px;
+}
+.pd{
+  padding: 10px 30px;
+}
+.pd-l-r-10{
+  margin: 0px 15px 0px 0px;
+}
+.border-r-30{
+  border-radius: 30px;
+}
+.border-r-5{
+  border-radius: 5px;
+}
+.bd-none{
+  border: none;
+}
+.bg-white{
+  background-color: white;
+  color: hsl(192, 100%, 9%);
+}
+.bg-pink{
+  background-color: hsl(322, 100%, 66%);
+  color: hsl(193, 100%, 96%);
+}
+.mg-t-b-20{
+  margin: 20px 0px;
+}
+.box-shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+.bg-dark-cyan{
+  background-color: hsl(192, 100%, 9%); 
+}
+.txt-right{
+  text-align: right;
+}
+.txt-center{
+  text-align: center;
+}
+.svg-filter{
+filter: brightness(0) invert(1);
+padding-top: 30px;
+}
+
+/* -------------------- */
+body{
+  font-size: 18px;
+}
+h1{
+  color: hsl(192, 100%, 9%);
+}
+p{
+  color: hsl(208, 11%, 55%);
+}
+footer{
+  margin-top: -150px;
+}
+#btn{
+  display: block;
+  position: relative;
+  margin: 50px auto;
+  top: 0;
+  background-color: white;
+  padding: 20px 10px;
+  width: 700px;
+}
+#footer-content{
+  align-items: baseline;
+}
+footer p, footer p a, footer a{
+  color: white;
+}
+#footer-content div{
+  flex-basis: 250px;
+}
+
+#social-media-icon a{
+  display: inline;
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+#social-media-icon a:hover{
+  color: hsl(322, 100%, 66%);
+}
+
+
+/* Moblie View */
+@media (max-width:375px){
+  header{
+    background:hsl(193, 100%, 96%) url(./resources/bg-hero-mobile.svg);
+  }
+  h1{
+    font-size: 25px;
+  }
+  .space-around{
+    padding: 20px;
+  }
+  .flex-display{
+    flex-direction: column;
+  }
+  header nav .pd{
+    padding: 10px 30px;
+  }
+  header nav .flex-display{
+    flex-direction: row;
+  }header nav ul li img{
+    width: 100px;
+  }
+  header div div img{
+    width: 300px;
+  }
+  .column{
+    padding: 50px 0px;
+    width: 250px;
+    text-align: center;
+  }
+  main div img{
+    width: 200px;
+    order: 1;
+  }
+  main div .column{
+    order: 2;
+  }
+  #btn{
+    margin: 10px 0px;
+    width: 100%;
+  }
+  #btn h1{
+    font-size: 20px;
+  }
+  footer{
+    display: block;
+  }
+  footer .svg-filter{
+    margin-top: 150px;
+  }
+  #footer-content div{
+    flex-basis: 0px;
+  }
+
+  #footer-content div p{
+    margin: 20px 0px;
+  }
+
+  #social-media-icon {
+    margin: 20px auto 5px auto;
+  }
+  footer .txt-right{
+    text-align: center;
+    font-size: 12px;
+  }
+
+ 
+
+
+}

@@ -149,7 +149,7 @@ footer p, footer p a, footer a{
 
 
 /* Moblie View */
-@media (max-width:480px){
+@media (max-width:375px){
   header{
     background:hsl(193, 100%, 96%) url(./resources/bg-hero-mobile.svg);
   }
